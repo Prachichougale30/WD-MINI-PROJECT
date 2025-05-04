@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agriculture Awareness for Farmers</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-color: #f0f0f0;
+      }
+
+      .video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1; /* Make sure the video is behind the content */
+      }
+
+      video {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover; /* Cover the entire background */
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 1; /* Ensure content is above the video */
+      }
+
+      h1 {
+        text-align: center;
+        color: #4caf50;
+        margin-bottom: 20px;
+      }
+
+      .awareness-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      .awareness-card {
+        background: #f9f9f9;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        border: 2px solid #4caf50;
+      }
+
+      .awareness-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .awareness-card i {
+        font-size: 40px;
+        color: #4caf50;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+
+      .dos-donts {
+        margin-top: 40px;
+        padding: 20px;
+        background: #e7f4e4;
+        border-radius: 8px;
+      }
+
+      .dos-donts h2 {
+        text-align: center;
+        color: #4caf50;
+      }
+
+      .dos-donts ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .dos-donts li {
+        background: #fff;
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .dos {
+        color: #4caf50;
+      }
+
+      .donts {
+        color: #f44336;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video-background">
+      <video autoplay loop muted>
+        <source src="video/leaves.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    
+
+    <div class="container">
+      <h1>Agriculture Awareness for Farmers</h1>
+
+      <div class="awareness-section">
+        <div class="awareness-card">
+          <i class="fas fa-seedling"></i>
+          <h2>Soil Health</h2>
+          <p>
+            Understanding soil composition and health is crucial. Regular
+            testing helps maintain optimal nutrient levels.
+          </p>
+        </div>
+
+        <div class="awareness-card">
+          <i class="fas fa-water"></i>
+          <h2>Water Management</h2>
+          <p>
+            Efficient irrigation practices conserve water and improve crop
+            yields. Explore drip irrigation and rainwater harvesting.
+          </p>
+        </div>
+
+        <div class="awareness-card">
+          <i class="fas fa-bug"></i>
+          <h2>Pest Control</h2>
+          <p>
+            Implement integrated pest management (IPM) strategies to minimize
+            chemical use and promote biodiversity.
+          </p>
+        </div>
+
+        <div class="awareness-card">
+          <i class="fas fa-sync-alt"></i>
+          <h2>Crop Rotation</h2>
+          <p>
+            Rotating crops can help prevent soil depletion and reduce pest and
+            disease buildup.
+          </p>
+        </div>
+
+        <div class="awareness-card">
+          <i class="fas fa-leaf"></i>
+          <h2>Organic Farming</h2>
+          <p>
+            Consider organic farming practices to enhance soil health and reduce
+            chemical inputs.
+          </p>
+        </div>
+
+        <div class="awareness-card">
+          <i class="fas fa-tractor"></i>
+          <h2>Modern Technology</h2>
+          <p>
+            Utilize modern agricultural technologies such as precision farming
+            and drones to optimize productivity and efficiency.
+          </p>
+        </div>
+      </div>
+
+      <div class="dos-donts">
+        <h2>Do's and Don'ts</h2>
+        <div class="dos">
+          <h3>Do's</h3>
+          <ul>
+            <li>Test your soil regularly to understand its nutrient needs.</li>
+            <li>Use cover crops to improve soil health.</li>
+            <li>Implement water conservation techniques.</li>
+            <li>Stay informed about pest management strategies.</li>
+            <li>
+              Engage with local agricultural extension services for support.
+            </li>
+          </ul>
+        </div>
+        <div class="donts">
+          <h3>Don'ts</h3>
+          <ul>
+            <li>Don't overuse chemical fertilizers and pesticides.</li>
+            <li>Don't ignore crop rotation practices.</li>
+            <li>Don't neglect the importance of biodiversity in farming.</li>
+            <li>Don't waste water through inefficient irrigation methods.</li>
+            <li>
+              Don't hesitate to seek help when facing agricultural challenges.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
